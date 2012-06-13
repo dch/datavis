@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Data Visualization Network of Resources</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<meta name="Author" content="Santiago Ortiz (thanks to Miguel Cardoso)" />
+<meta name="Keywords" content="twitter, data visualization, infoviz, actionscript, media, design, programming, experimental, computer, network, graph, interaction, interface, information, science, infographics" />
+<meta name="Description" content="A network of links to data visualization resources (blogs, companies, people, tools, frameworks, books…). The network is based upon the words people use to tag these links using Delicious social bookmarking service." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta property="og:image" content="./resources/datavisnetwork.png"/>
+
+<style type="text/css" media="screen">
+	 html, body{ height:100%;}
+	 body { margin:0; padding:0; overflow:hidden; }
+	 textarea:focus { border: 2px solid red; outline: 0px; resize: none; }
+	 body {font-family: Arial}
+</style>
+
+</head>
+
+<script>var hashTag = window.location.hash</script>
+
+<!-- 220,215,210 -->
+<body bgcolor='#D2CDC8' id="index" class="home">
+	<div id="maindiv">
+  	<canvas id="main">Your browser does not have support for Canvas.</canvas>
+	</div>
+
+	<div id="removeDiv">
+	</div>
+
+	<div id="tweet_button" style = "position:absolute; top:-1000px; left:0px; z-index:30;">
+		<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?text=Datavis%20network%20of%20sources&amp;via=moebio" style="width:90px; height:20px"></iframe>
+	</div>
+
+	<!-- BASIC -->
+	<!-- <script type="text/javascript" src="../frameworks/libraries/jquery-1.7.1.min.js"></script> -->
+	<!-- <script type="text/javascript" src="../frameworks/IncludeAll.js"></script> -->
+	<script type="text/javascript" src="./classes/all.min.js"></script>
+	<!-- <script type="text/javascript" src="./classes/all.combined.js"></script> -->
+
+	<!-- PROJECT specific classes -->
+	<script type="text/javascript" src="./Main.js"></script>
+	<script type="text/javascript" src="./classes/Panel.js"></script>
+	<script type="text/javascript" src="./classes/Info.js"></script>
+	<script type="text/javascript" src="./classes/ResourceInfo.js"></script>
+	<script type="text/javascript" src="./classes/CreateNewtwork.js"></script>
+	<script type="text/javascript" src="./classes/DrawNetwork.js"></script>
+	<script type="text/javascript" src="./classes/NetworkInterface.js"></script>
+	<script type="text/javascript" src="./classes/Comparatives.js"></script>
+
+
+		<!-- google analytics -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-28611174-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+
+</body>
+
+</html>
